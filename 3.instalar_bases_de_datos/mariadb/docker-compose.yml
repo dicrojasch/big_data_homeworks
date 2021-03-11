@@ -1,0 +1,35 @@
+version: '3.3'
+
+volumes:
+  mariadb-volume:
+    external: false
+
+services:
+
+  mariadb:
+    image: mariadb:10.5.9
+    restart: always
+    environment:
+      MYSQL_USER: bigdata
+      MYSQL_PASSWORD: bigdata
+      MYSQL_ROOT_PASSWORD: bigdata
+      MYSQL_DATABASE: bigdata
+    container_name: mariadb
+    volumes:
+      - mariadb-volume:/var/lib/mysql
+      - ./scripts:/docker-entrypoint-initdb.d
+
+
+  adminer-mariadb:
+    image: adminer:4.8.0
+    container_name: adminer-mariadb
+    depends_on:
+      - mariadb
+    restart: always
+    environment:
+      ADMINER_DEFAULT_SERVER: mariadb
+      ADMINER_DESIGN: nette
+      ADMINER_PLUGINS: tables-filter tinymce
+    ports:
+      - 8081:8080
+
