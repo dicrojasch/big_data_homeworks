@@ -8,7 +8,7 @@ Para ejecutar, clone este repositorio y ubicando la línea de comandos en la car
 docker-compose up
 ```
 
-Después de unos segundos se puede acceder al gestor de base de datos `adminer` con la URL [localhost:8081](localhost:8081)
+Después de unos segundos se puede acceder al gestor de base de datos `adminer` con la URL [localhost:8081](http://localhost:8081)
 
 Usar las siguientes credenciales donde el password es `bigdata`
 
@@ -32,7 +32,7 @@ Para ejecutar, clone este repositorio y ubicando la línea de comandos en la car
 docker-compose up
 ```
 
-Después de unos segundos se puede acceder al gestor de base de datos `adminer` con la URL [localhost:8082](localhost:8082)
+Después de unos segundos se puede acceder al gestor de base de datos `adminer` con la URL [localhost:8082](http://localhost:8082)
 
 Usar las siguientes credenciales donde el password es `bigdata`
 
