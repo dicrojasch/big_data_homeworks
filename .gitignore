@@ -1,0 +1,13 @@
+.idea
+.ipynb_checkpoints
+__pycache__
+5.base_datos/schemacrawler/
+5.base_datos/bases_datos/menagerie_database/menagerie-db
+5.base_datos/bases_datos/world_database
+5.base_datos/BD_GRUPOS
+5.base_datos/datos/Curso
+5.base_datos/bases_datos/sakila_database
+7.dask/github/data
+5.base_datos/bases_datos_test
+5.base_datos/grupos
+5.base_datos/python_datos/Python
